@@ -23,8 +23,8 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//*[@id='login']/section/div[1]/div/form/div[3]/div/div[2]/button")
 	WebElement loginbtn;
 	
-	@FindBy(xpath="/html/body/div[1]/section[2]/div/div/div/div[3]/ul/li/h3")
-	WebElement homepageIcon;
+	@FindBy(xpath="//*[@id='example-navbar-collapse']/ul[1]/li/a")
+	WebElement menu;
 	
 	//Initializing the page object
 		public LoginPage(){
@@ -45,15 +45,16 @@ public class LoginPage extends TestBase{
 	
 	public void verifyHomepage(){
 		
-		String iconName = homepageIcon.getText();
-		Assert.assertEquals("Franchise Info", iconName);
+		String menuText = menu.getText();
+		System.out.println( menuText);
+		Assert.assertEquals("Setup", menuText);
 	}
 	
-	public void waitForHomePage(){
+	/*public void waitForHomePage(){
 		
 		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.textToBePresentInElement(homepageIcon, "Franchise Info"));
-	}
+		wait.until(ExpectedConditions.textToBePresentInElement(homepageIcon, "Setup"));
+	}*/
 	
 
 }

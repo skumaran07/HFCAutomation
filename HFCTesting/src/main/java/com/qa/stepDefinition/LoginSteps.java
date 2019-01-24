@@ -26,7 +26,7 @@ public class LoginSteps extends TestBase {
 	public void enter_valid_username_and_password_for_login() throws Exception {
 		login = new LoginPage();
 		login.login(prop.getProperty("username1"), prop.getProperty("password1"));
-		login.waitForHomePage();
+		login.verifyHomepage();
 		//Thread.sleep(7000);
 	}
 
