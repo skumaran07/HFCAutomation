@@ -17,7 +17,7 @@ public class TestBase {
 		
 		try{
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream("C:\\Users\\WMS\\workspace\\HFCTesting\\src\\main\\java\\com\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\WMS\\git\\HFCAutomation\\HFCTesting\\src\\main\\java\\com\\qa\\config\\config.properties");
 			prop.load(fis);
 		}catch(IOException e){
 			e.getMessage();

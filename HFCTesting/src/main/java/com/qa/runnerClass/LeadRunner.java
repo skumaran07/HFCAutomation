@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= "C:\\Users\\WMS\\workspace\\HFCTesting\\src\\main\\java\\com\\qa\\featureFiles\\Lead.feature", glue = {"com/qa/stepDefinition"}, tags={"@AddLead"},
+@CucumberOptions(features= "C:\\Users\\WMS\\git\\HFCAutomation\\HFCTesting\\src\\main\\java\\com\\qa\\featureFiles\\Lead.feature", glue = {"com/qa/stepDefinition"}, tags={"@AddLead"},
 plugin ={"pretty", "html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},
 monochrome = true, //display the console output in proper readable format
 strict = true, //it will check if any steps not defined in step definition
