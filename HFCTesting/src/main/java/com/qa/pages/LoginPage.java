@@ -23,8 +23,8 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//*[@id='login']/section/div[1]/div/form/div[3]/div/div[2]/button")
 	WebElement loginbtn;
 	
-	@FindBy(xpath="//*[@id='example-navbar-collapse']/ul[1]/li/a")
-	WebElement menu;
+	@FindBy(xpath="//*[@id='crm-form-detail']/div[1]/div[1]/h2")
+	WebElement newsHeading;
 	
 	//Initializing the page object
 		public LoginPage(){
@@ -45,9 +45,9 @@ public class LoginPage extends TestBase{
 	
 	public void verifyHomepage(){
 		
-		String menuText = menu.getText();
-		System.out.println( menuText);
-		Assert.assertEquals("Setup", menuText);
+		String newsHeadingText = newsHeading.getText();
+		System.out.println(newsHeadingText);
+		Assert.assertEquals(newsHeadingText, "News & Updates");
 	}
 	
 	/*public void waitForHomePage(){

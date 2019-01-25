@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.943928">
-<testcase classname="Verify the login page is working" name="Check login is allow the user based on valid username and password" time="17.943928">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="62.137644">
+<testcase classname="Check whether the lead page is working properly" name="Check whether we can create a new lead" time="62.137644">
 <system-out><![CDATA[Given open the browser and enter the url....................................passed
 When Enter valid username and password for login............................passed
-Then Check page redirect to franchises list page............................passed
+Then Check page redirect to home page.......................................passed
+Then Select Sales icon from left navigation and check the page is displaying lead list page.passed
+Then Click Add Lead button and check the page redirected into corresponding page.passed
+Then Enter the values in all the fields and save the record.................passed
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>

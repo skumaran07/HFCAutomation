@@ -4,18 +4,17 @@
     "elements": [
       {
         "line": 22,
-        "name": "Check login is allow the user based on valid username and password",
+        "name": "",
         "description": "",
-        "id": "verify-the-login-page-is-working;check-login-is-allow-the-user-based-on-valid-username-and-password",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 10088385424,
+              "duration": 15619858032,
               "status": "passed"
             },
-            "line": 24,
+            "line": 23,
             "name": "open the browser and enter the url",
             "match": {
               "location": "LoginSteps.open_the_browser_and_enter_the_url()"
@@ -24,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 5765058767,
+              "duration": 12132290044,
               "status": "passed"
             },
-            "line": 25,
+            "line": 24,
             "name": "Enter valid username and password for login",
             "match": {
               "location": "LoginSteps.enter_valid_username_and_password_for_login()"
@@ -36,35 +35,86 @@
           },
           {
             "result": {
-              "duration": 18448447,
+              "duration": 43214396,
               "status": "passed"
             },
-            "line": 26,
-            "name": "Check page redirect to franchises list page",
+            "line": 25,
+            "name": "Check page redirect to home page",
             "match": {
               "location": "LoginSteps.check_page_redirect_to_franchises_list_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Check whether we can create a new lead",
+        "description": "",
+        "id": "check-whether-the-lead-page-is-working-properly;check-whether-we-can-create-a-new-lead",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 857249688,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Select Sales icon from left navigation and check the page is displaying lead list page",
+            "match": {
+              "location": "LeadSteps.select_Sales_icon_from_left_navigation_and_check_the_page_is_displaying_lead_list_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2056704409,
+              "duration": 992934116,
               "status": "passed"
             },
-            "line": 27,
+            "line": 36,
+            "name": "Click Add Lead button and check the page redirected into corresponding page",
+            "match": {
+              "location": "LeadSteps.click_Add_Lead_button_and_check_the_page_redirected_into_corresponding_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30140635451,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Enter the values in all the fields and save the record",
+            "match": {
+              "location": "LeadSteps.enter_the_values_in_all_the_fields_and_save_the_record()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2322589392,
+              "status": "passed"
+            },
+            "line": 38,
             "name": "Close the browser",
             "match": {
               "location": "LoginSteps.close_the_browser()"
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@AddLead"
+          }
         ]
       }
     ],
-    "name": "Verify the login page is working",
+    "name": "Check whether the lead page is working properly",
     "description": "",
-    "id": "verify-the-login-page-is-working",
+    "id": "check-whether-the-lead-page-is-working-properly",
     "keyword": "Feature",
-    "uri": "C:/Users/WMS/git/HFCAutomation/HFCTesting/src/main/java/com/qa/featureFiles/Login.feature"
+    "uri": "C:/Users/WMS/git/HFCAutomation/HFCTesting/src/main/java/com/qa/featureFiles/Lead.feature"
   }
 ]

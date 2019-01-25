@@ -23,5 +23,5 @@ Scenario: Check login is allow the user based on valid username and password
 
 Given open the browser and enter the url
 When Enter valid username and password for login
-Then Check page redirect to franchises list page
+Then Check page redirect to home page
 Then Close the browser 

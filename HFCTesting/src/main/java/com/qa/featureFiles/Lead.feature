@@ -22,9 +22,8 @@ Feature: Check whether the lead page is working properly
 Background:
     Given open the browser and enter the url
     When Enter valid username and password for login
-    Then Check page redirect to franchises list page 
-		Then Select users option under impersonate as at right of three dot
-		Then Check the page redirect to home dashboard page
+    Then Check page redirect to home page 
+		
 
 @LeadList	
 Scenario: Check whether current page is Lead list page or not
